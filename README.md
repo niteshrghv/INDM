@@ -42,8 +42,8 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/niteshrghv/INDM-macos-silicon.git
-   cd INDM-macos-silicon
+   git clone https://github.com/niteshrghv/INDM.git
+   cd INDM
    ```
 
 2. **Install dependencies**
