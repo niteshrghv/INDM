@@ -1,0 +1,36 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Deep Matte Black -->
+  <rect x="50" y="50" width="924" height="924" rx="200" fill="#050505" />
+  
+  <!-- Subtle Border -->
+  <rect x="50" y="50" width="924" height="924" rx="200" stroke="#333333" stroke-width="4"/>
+
+  <!-- Glow (Behind) -->
+  <path d="M512 780L280 540H420V260H604V540H744L512 780Z" fill="#007FFF" opacity="0.4" filter="url(#blur)"/>
+
+  <!-- Main Arrow Shape (Sharp) -->
+  <path d="M512 780L280 540H420V260H604V540H744L512 780Z" fill="url(#arrow_gradient)"/>
+  
+  <!-- Glossy Reflection (Sharp) -->
+  <path d="M512 780L280 540H420V260H604V540H744L512 780Z" fill="url(#shine_gradient)" opacity="0.2" style="mix-blend-mode: overlay;"/>
+
+  <defs>
+    <!-- Arrow Gradient: Electric Blue to Deep Purple -->
+    <linearGradient id="arrow_gradient" x1="512" y1="260" x2="512" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00F0FF"/> <!-- Cyan -->
+      <stop offset="0.5" stop-color="#007FFF"/> <!-- Blue -->
+      <stop offset="1" stop-color="#5D00FF"/> <!-- Purple -->
+    </linearGradient>
+
+    <!-- Shine Gradient -->
+    <linearGradient id="shine_gradient" x1="512" y1="260" x2="512" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Blur Filter for the Glow only -->
+    <filter id="blur" x="0" y="0" width="1024" height="1024" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="30" />
+    </filter>
+  </defs>
+</svg>
