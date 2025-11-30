@@ -98,7 +98,7 @@ app.on('activate', () => {
 });
 
 // Default Download Directory
-const defaultDownloadDir = path.join(app.getPath('downloads'), 'INDM');
+const defaultDownloadDir = path.join(app.getPath('downloads'), 'indm');
 if (!fs.existsSync(defaultDownloadDir)) {
     fs.mkdirSync(defaultDownloadDir, { recursive: true });
 }
